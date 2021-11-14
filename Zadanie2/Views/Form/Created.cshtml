@@ -1,0 +1,19 @@
+﻿@model Zadanie2.Models.FormModel
+
+@{
+    ViewData["Title"] = "Form-Created";
+
+}
+
+@{
+    void RenderName()
+    {
+        int n = Model.Number;
+        for (int i = 1; i <= n; i++)
+        {
+            <p>@Html.DisplayFor(model => model.Name)</p>
+        }
+
+    }
+    RenderName();
+}
